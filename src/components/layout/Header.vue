@@ -1,7 +1,9 @@
 <template>
-  <header class="header">
+  <header id="header" class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/OU6.png" alt="logo" width="200" height="70" class="mt-2">
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -17,7 +19,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           
-           <li class="nav-item dropdown mr-2">
+           <li class="nav-item dropdown mr-3">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -26,7 +28,7 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-            >Products</a>
+            >PRODUCTS</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -34,22 +36,15 @@
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">CONTACT</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+         
+           <li class="nav-item mr-3">
+            <a class="nav-link" href="#">ABOUT</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
-          </li>
-          <li class="nav-item dropdown mr-2">
+         
+          <li class="nav-item dropdown mr-5">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -58,13 +53,19 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-            >Dropdown</a>
+            >LOGIN</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Create Account</a>
+              <a class="dropdown-item" href="#">Sign In</a>
+              <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a> -->
             </div>
+          </li>
+           <li class="nav-item mr-4">
+            <a class="nav-link" href="#"><font-awesome-icon icon="search" style="color: #5cdb95" /></a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#"><font-awesome-icon icon="shopping-cart" style="color: #5cdb95" /></a>
           </li>
         
         </ul>
@@ -74,12 +75,21 @@
 </template>
 
 <script>
+
 export default {
-  name: "header"
+  name: "header",
+  
 };
 </script>
 
 <style scoped>
+nav{
+  font-family: Karla;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+
 /* .header {
   text-align: center;
   padding: 10px;
