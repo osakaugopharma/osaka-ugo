@@ -1,16 +1,23 @@
 <template>
   <div id="app">
-    <Header />
+    <Overlay />
+    <!-- <Header /> -->
+    <Carousel />
   </div>
 </template>
 
 
 <script>
-import Header from './components/layout/Header';
+// import Header from './components/layout/Header';
+import Carousel from './components/layout/Carousel';
+import Overlay from './components/layout/Overlay';
+
 export default {
   name: "app",
   components: {
-    Header
+    // Header,
+    Carousel,
+    Overlay,
   }
 }
 </script>

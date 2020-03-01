@@ -2,24 +2,18 @@
   <header id="header" class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#">
-        <img src="../../assets/OU6.png" alt="logo" width="200" height="70" class="mt-2">
+        <img src="../../assets/OU6.png" alt="logo" width="150" height="50" class="mt-2" />
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
+
+      <button class="toggler" @click="$emit('show-overlay-navigation')">
+        <div class="ham"></div>
+        <div class="ham"></div>
+        <div class="ham"></div>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          
-           <li class="nav-item dropdown mr-3">
+          <li class="nav-item dropdown mr-2">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -36,15 +30,15 @@
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
           </li>
-          <li class="nav-item mr-3">
+          <li class="nav-item mr-2">
             <a class="nav-link" href="#">CONTACT</a>
           </li>
-         
-           <li class="nav-item mr-3">
+
+          <li class="nav-item mr-2">
             <a class="nav-link" href="#">ABOUT</a>
           </li>
-         
-          <li class="nav-item dropdown mr-5">
+
+          <li class="nav-item dropdown mr-4">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -58,47 +52,67 @@
               <a class="dropdown-item" href="#">Create Account</a>
               <a class="dropdown-item" href="#">Sign In</a>
               <!-- <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a> -->
+              <a class="dropdown-item" href="#">Something else here</a>-->
             </div>
           </li>
-           <li class="nav-item mr-4">
-            <a class="nav-link" href="#"><font-awesome-icon icon="search" style="color: #5cdb95" /></a>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">
+              <font-awesome-icon icon="search" style="color: #5cdb95" />
+            </a>
           </li>
-           <li class="nav-item">
-            <a class="nav-link" href="#"><font-awesome-icon icon="shopping-cart" style="color: #5cdb95" /></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <font-awesome-icon icon="shopping-cart" style="color: #5cdb95" />
+            </a>
           </li>
-        
         </ul>
       </div>
+     
     </nav>
   </header>
 </template>
 
 <script>
-
 export default {
   name: "header",
-  
 };
+
+/* Open */
+
 </script>
 
 <style scoped>
-nav{
+nav {
   font-family: Karla;
   font-weight: 700;
   font-size: 16px;
 }
 
+.ham {
+  background: rgb(68, 66, 66);
+  width: 30px;
+  height: 4px;
+  margin-bottom: 0.35rem;
+  border-radius: 35px;
+}
 
-/* .header {
-  text-align: center;
-  padding: 10px;
-} */
+.toggler {
+  background: none;
+  border: none;
+  outline: none;
+}
 
-/* .header a {
-  color: #fff;
-  padding-right: 5px;
-} */
+@media (min-width: 992px) {
+  .toggler {
+    display: none;
+  }
+}
+
+button.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
 </style>
 
 

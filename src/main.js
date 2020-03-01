@@ -1,6 +1,7 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import 'bootstrap/dist/js/bootstrap.bundle'
@@ -10,7 +11,7 @@ import App from './App.vue'
 import router from './router'
 
 library.add(faSearch)
-
+library.add(faCaretDown)
 library.add(faShoppingCart)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
