@@ -3,6 +3,11 @@
     <Overlay />
     <!-- <Header /> -->
     <Carousel />
+    <About />
+    <Categories />
+    <FeaturedProducts />
+    <FeaturedProductContentOne />
+    <Footer />
   </div>
 </template>
 
@@ -11,6 +16,11 @@
 // import Header from './components/layout/Header';
 import Carousel from './components/layout/Carousel';
 import Overlay from './components/layout/Overlay';
+import About from './components/layout/About';
+import Categories from './components/layout/Categories';
+import FeaturedProducts from './components/layout/FeaturedProducts';
+import FeaturedProductContentOne from './components/layout/FeaturedProductContentOne';
+import Footer from './components/layout/Footer';
 
 export default {
   name: "app",
@@ -18,6 +28,11 @@ export default {
     // Header,
     Carousel,
     Overlay,
+    About,
+    Categories,
+    FeaturedProducts,
+    FeaturedProductContentOne,
+    Footer,
   }
 }
 </script>

@@ -67,18 +67,16 @@
           </li>
         </ul>
       </div>
-     
     </nav>
   </header>
 </template>
 
 <script>
 export default {
-  name: "header",
+  name: "header"
 };
 
 /* Open */
-
 </script>
 
 <style scoped>
@@ -112,7 +110,6 @@ button.navbar-toggler {
   border: none;
   outline: none;
 }
-
 </style>
 
 
