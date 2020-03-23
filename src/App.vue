@@ -39,14 +39,19 @@ export default {
 
 <style>
 #app {
-  font-family: Karla;
+  font-family: Roboto-Regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  overflow: hidden;
+  letter-spacing: 0.01rem;
+  font-size: 1rem;
 }
 
-#nav {
+
+
+/* #nav {
   padding: 30px;
 }
 
@@ -57,5 +62,5 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>

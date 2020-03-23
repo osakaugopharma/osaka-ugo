@@ -22,7 +22,7 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-            >PRODUCTS</a>
+            >Products</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -31,11 +31,11 @@
             </div>
           </li>
           <li class="nav-item mr-2">
-            <a class="nav-link" href="#">CONTACT</a>
+            <a class="nav-link" href="#">Contact</a>
           </li>
 
           <li class="nav-item mr-2">
-            <a class="nav-link" href="#">ABOUT</a>
+            <a class="nav-link" href="#">About</a>
           </li>
 
           <li class="nav-item dropdown mr-4">
@@ -47,7 +47,7 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-            >LOGIN</a>
+            >Login</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Create Account</a>
               <a class="dropdown-item" href="#">Sign In</a>
@@ -81,8 +81,7 @@ export default {
 
 <style scoped>
 nav {
-  font-family: Karla;
-  font-weight: 700;
+  font-family: Roboto Medium;
   font-size: 16px;
 }
 
@@ -109,6 +108,14 @@ nav {
 button.navbar-toggler {
   border: none;
   outline: none;
+}
+
+li a{
+  letter-spacing: -0.05em;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1;
+  /* -webkit-font-smoothing: antialiased; */
 }
 </style>
 
