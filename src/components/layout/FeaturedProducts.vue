@@ -122,7 +122,7 @@ div.row div {
   border: none;
   background-color: #5cdb95;
   border-radius: 3px;
-  padding: 0.5rem 1rem;
+ padding: 0.5rem 2rem;
   color: #fff;
   outline: none;
   /* margin-top: 5em; */

@@ -2,44 +2,56 @@
   <div>
     <div class="container-fluid footer">
       <div class="row">
-        <div class="col-sm">
-            <h5><b>Get In Touch</b></h5>
-            <p>youremail@gmail.com</p>
-            <p>0000-0000-0000</p>
+        <div class="col-12 col-md-7 col-lg-4">
+          <h5>
+            <b>Get In Touch</b>
+          </h5>
+          <p>youremail@gmail.com</p>
+          <p>0000-0000-0000</p>
         </div>
-        <div class="col-sm">
-          <h5><b>About Us</b></h5>
+        <div class="col-12 col-md-5 col-lg-4">
+          <h5>
+            <b>About Us</b>
+          </h5>
           <p>Our Mission</p>
-            <p>Terms And Conditions</p>
-            <p>Privacy Policy</p>
+          <p>Terms And Conditions</p>
+          <p>Privacy Policy</p>
         </div>
-        <div class="col-sm">
-            <h5><b>Social Media</b></h5>
-            <div class="row">
-                <div class="col-sm-2">
-                    <!-- Solved Fontawesome brand icon problem -->
-                     <font-awesome-icon :icon="['fab', 'facebook-f']" style="color: #fff; font-size: 18px" />
-                </div>
-                 <div class="col-sm-2">
-                    
-                     <font-awesome-icon :icon="['fab', 'twitter']" style="color: #fff; font-size: 18px" />
-                </div>
-                 <div class="col-sm-2">
-               
-                     <font-awesome-icon :icon="['fab', 'instagram']" style="color: #fff; font-size: 18px" />
-                </div>
-                 <div class="col-sm-2">
-                   
-                     <font-awesome-icon :icon="['fab', 'whatsapp']" style="color: #fff; font-size: 18px" />
-                </div>
+        <div class="col-12 col-md-8 col-lg-4 social-media">
+          <div>
+            <h5>
+              <b>Social Media</b>
+            </h5>
+            <div class="row justify-content-center">
+              <div class="col-2">
+                <!-- Solved Fontawesome brand icon problem -->
+                <font-awesome-icon
+                  :icon="['fab', 'facebook-f']"
+                  style="color: #fff; font-size: 18px"
+                />
+              </div>
+              <div class="col-2">
+                <font-awesome-icon :icon="['fab', 'twitter']" style="color: #fff; font-size: 18px" />
+              </div>
+              <div class="col-2">
+                <font-awesome-icon
+                  :icon="['fab', 'instagram']"
+                  style="color: #fff; font-size: 18px"
+                />
+              </div>
+              <div class="col-2">
+                <font-awesome-icon
+                  :icon="['fab', 'whatsapp']"
+                  style="color: #fff; font-size: 18px"
+                />
+              </div>
             </div>
+          </div>
         </div>
       </div>
-     
-          <p class="footer-note container">©2020 Osaka Ugo Pharmacy, Nigeria. All Rights Reserved.</p>
-    
+
+      <p class="footer-note container">©2020 Osaka Ugo Pharmacy, Nigeria. All Rights Reserved.</p>
     </div>
-    
   </div>
 </template>
 
@@ -50,29 +62,81 @@ export default {
 </script>
 
 <style scoped>
-.container-fluid{
-    background-color: #5cdb95;
-    color: #fff;
-    padding: 5em 0 1em 9em;
+.container-fluid {
+  background-color: #5cdb95;
+  color: #fff;
+  padding-top: 5em;
 }
 
 /* .container p{
 } */
 
+/* .social-media div{
+  text-align: center;
+} */
 
-.footer-note{
-    padding-top: 6em;
+.footer-note {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  font-size: 15px;
 }
 
-h5{
-    padding-bottom: 1.5em;
+h5 {
+  padding-bottom: 0.5em;
 }
 
-.col-sm p{
+.social-media h5 {
+  padding-bottom: 1.5em;
+}
+
+.social-media {
+  padding-bottom: 0;
+  height: 6em !important;
+}
+
+/* .col-sm p{
     padding-bottom:0.5rem;
 }
 
 .col-sm{
     text-align: left;
+} */
+
+div.row div {
+  margin-bottom: 3.5em;
+}
+
+/* div.row{
+  padding-left: 1em;
+} */
+
+@media (min-width: 768px) {
+  div.row div {
+    text-align: left;
+  }
+
+  .social-media div.row {
+    padding: 0 !important;
+    justify-content: start !important;
+  }
+
+  div.row{
+  padding-left: 2em;
+}
+}
+
+@media (min-width: 992px) {
+  div.row div {
+    text-align: left;
+  }
+
+  .social-media div.row {
+    padding: 0 !important;
+    justify-content: start !important;
+  }
+
+  div.row{
+  padding-left: 10em;
+}
 }
 </style>
