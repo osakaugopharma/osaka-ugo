@@ -6,88 +6,79 @@
       </ol>
     </nav>
 
-     <div>
-      <div class="row row-gap">
-        <div class="col-sm">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
-        </div>
-        <div class="col-sm">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
-        </div>
-        <div class="col-sm">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
-        </div>
+    <div class="row row-gap">
+      <div class="col-6 col-sm-6 col-lg-4">
+        <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+        <p class="category-paragraph">Anti-Malaria</p>
+      </div>
+      <div class="col-6 col-sm-6 col-lg-4">
+        <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+        <p class="category-paragraph">Anti-Malaria</p>
       </div>
 
-      <div class="row row-gap">
-        <div class="col-sm">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
-        </div>
-        <div class="col-sm">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
-        </div>
-        <div class="col-sm">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
-        </div>
+      <div class="col-6 col-sm-6 col-lg-4">
+        <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+        <p class="category-paragraph">Anti-Malaria</p>
+      </div>
+      <div class="col-6 col-sm-6 col-lg-4">
+        <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+        <p class="category-paragraph">Anti-Malaria</p>
       </div>
 
-      <div class="row row-gap">
-        <div class="col-sm">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
-        </div>
-        <div class="col-sm">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
-        </div>
-        <div class="col-sm">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
-        </div>
+      <div class="col-6 col-sm-6 col-lg-4">
+        <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+        <p class="category-paragraph">Anti-Malaria</p>
       </div>
-
-      <button class="shop-now">SHOP NOW</button>
-  </div>
+      <div class="col-6 col-sm-6 col-lg-4">
+        <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+        <p class="category-paragraph">Anti-Malaria</p>
+      </div>
+    </div>
+    <button class="shop-now">Shop now</button>
   </div>
 </template>
 
+
 <script>
 export default {
-    name: "FeaturedProductContentOne"
+  name: "FeaturedProductContentOne"
 };
 </script>
 
 <style scoped>
-.container{
+.container {
   padding-top: 7em;
   margin-bottom: 6em;
 }
 
-h2{
+h2 {
   margin-bottom: 2em;
 }
 
-.margin{
+.margin {
   margin-bottom: 7em;
 }
 
-.row-gap{
-    margin-top: 8em;
+div.row div {
+  margin-bottom: 5em;
 }
 
-.shop-now{
+.shop-now {
   border: none;
   background-color: #5cdb95;
   border-radius: 3px;
   padding: 0.5rem 1rem;
   color: #fff;
   outline: none;
-  margin-top: 5em;
+  /* margin-top: 5em; */
 }
+.category-paragraph {
+  margin-top: 3.5em;
+}
+
+/* @media (min-width: 768px) {
+  div.row div{
+    width: 250px !important;
+  }
+} */
 </style>

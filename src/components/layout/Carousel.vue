@@ -125,7 +125,7 @@ export default {};
 
 @media (max-width:575.98px) {
   .carousel-caption h1{
-  font-weight: bold;
+ 
   letter-spacing: 0.02rem;
   font-size: 1.5em;
 }
@@ -145,7 +145,7 @@ export default {};
 
 @media (min-width: 576px) {
   .carousel-caption h1{
-  font-weight: bold;
+
   letter-spacing: 0.02rem;
   font-size: 1.96em;
 }
@@ -157,7 +157,7 @@ export default {};
 
 @media (min-width: 576px) {
   .carousel-caption h1{
-  font-weight: bold;
+  
   letter-spacing: 0.02rem;
   font-size: 1.96em;
 }

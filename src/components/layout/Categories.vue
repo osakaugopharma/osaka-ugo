@@ -1,47 +1,47 @@
 <template>
-  <div class="container-fluid background">
+  <div class="container background">
     <div class="container">
-        <h2>Product Categories</h2>
-      <div class="row row-gap">
-        <div class="col-sm">
+        <h2>Product categories</h2>
+      <div class="row row-gap text-center">
+        <div class="col-sm-4 col-4">
              <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
              <p class="category-paragraph">Anti-Malaria</p>
         </div>
-        <div class="col-sm">
+        <div class="col-sm-4 col-4">
              <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
              <p class="category-paragraph">Anti-Malaria</p>
         </div>
-        <div class="col-sm">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
-        </div>
-      </div>
-
-       <div class="row row-gap">
-        <div class="col-sm">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
-        </div>
-        <div class="col-sm">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
-        </div>
-        <div class="col-sm">
+        <div class="col-sm-4 col-4">
              <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
              <p class="category-paragraph">Anti-Malaria</p>
         </div>
       </div>
 
        <div class="row row-gap">
-        <div class="col-sm">
+        <div class="col-sm-4 col-4">
              <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
              <p class="category-paragraph">Anti-Malaria</p>
         </div>
-        <div class="col-sm">
+        <div class="col-sm-4 col-4">
              <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
              <p class="category-paragraph">Anti-Malaria</p>
         </div>
-        <div class="col-sm">
+        <div class="col-sm-4 col-4">
+             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+             <p class="category-paragraph">Anti-Malaria</p>
+        </div>
+      </div>
+
+       <div class="row row-gap">
+        <div class="col-sm-4 col-4">
+             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+             <p class="category-paragraph">Anti-Malaria</p>
+        </div>
+        <div class="col-sm-4 col-4">
+             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+             <p class="category-paragraph">Anti-Malaria</p>
+        </div>
+        <div class="col-sm-4 col-4">
              <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
              <p class="category-paragraph">Anti-Malaria</p>
         </div>
@@ -70,4 +70,15 @@ export default {
 .row-gap{
     margin-top: 8em;
 }
+
+/* @media (max-width: 575.98px) {
+     div.row div{
+          width: 7em;
+          margin-right: 19px;
+     }
+
+     div.row p{
+          font-size: 0.9em;
+     }
+ } */
 </style>

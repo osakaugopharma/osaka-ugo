@@ -7,7 +7,39 @@
       </ol>
     </nav>
 
-     <div>
+    
+    <div class="row">
+      <div class="col-6 col-sm-6 col-lg-4">
+        <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+        <p class="category-paragraph">Anti-Malaria</p>
+      </div>
+      <div class="col-6 col-sm-6 col-lg-4">
+        <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+        <p class="category-paragraph">Anti-Malaria</p>
+      </div>
+
+      <div class="col-6 col-sm-6 col-lg-4">
+        <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+        <p class="category-paragraph">Anti-Malaria</p>
+      </div>
+      <div class="col-6 col-sm-6 col-lg-4">
+        <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+        <p class="category-paragraph">Anti-Malaria</p>
+      </div>
+
+      <div class="col-6 col-sm-6 col-lg-4">
+        <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+        <p class="category-paragraph">Anti-Malaria</p>
+      </div>
+      <div class="col-6 col-sm-6 col-lg-4">
+        <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+        <p class="category-paragraph">Anti-Malaria</p>
+      </div>
+    </div>
+    <button class="shop-now">Shop now</button>
+  </div>
+
+     <!-- <div>
       <div class="row row-gap">
         <div class="col-sm">
              <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
@@ -54,8 +86,8 @@
       </div>
 
       <button class="shop-now">SHOP NOW</button>
-  </div>
-  </div>
+  </div> -->
+  
 </template>
 
 <script>
@@ -73,13 +105,18 @@ h2{
   margin-bottom: 2em;
 }
 
+.category-paragraph{
+    margin-top: 3.5em;
+}
+
 .margin{
   margin-bottom: 7em;
 }
 
-.row-gap{
-    margin-top: 8em;
+div.row div {
+  margin-bottom: 5em;
 }
+
 
 .shop-now{
   border: none;
@@ -88,6 +125,6 @@ h2{
   padding: 0.5rem 1rem;
   color: #fff;
   outline: none;
-  margin-top: 5em;
+  /* margin-top: 5em; */
 }
 </style>
