@@ -81,7 +81,9 @@ export default {};
 
 <style scoped>
 #carousel{
-  z-index: 0 !important;
+  /* Fix overlay and carousel problem */
+  z-index: -1;
+  position: relative;
 }
 
 /* .carousel-item {
