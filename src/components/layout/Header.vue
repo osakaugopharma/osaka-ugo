@@ -87,10 +87,9 @@ nav {
 
 .ham {
   background: rgb(68, 66, 66);
-  width: 30px;
-  height: 4px;
-  margin-bottom: 0.35rem;
-  border-radius: 35px;
+  width: 20px;
+  height: 3px;
+  margin-bottom: 0.2rem;
 }
 
 .toggler {

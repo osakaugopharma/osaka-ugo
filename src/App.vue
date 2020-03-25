@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Overlay />
-    <!-- <Header /> -->
+  
     <Carousel />
     <About />
     <Categories />
@@ -15,6 +15,7 @@
 <script>
 // import Header from './components/layout/Header';
 import Carousel from './components/layout/Carousel';
+
 import Overlay from './components/layout/Overlay';
 import About from './components/layout/About';
 import Categories from './components/layout/Categories';
@@ -28,6 +29,7 @@ export default {
     // Header,
     Carousel,
     Overlay,
+  
     About,
     Categories,
     FeaturedProducts,

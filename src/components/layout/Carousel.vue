@@ -14,7 +14,7 @@
 
             <p>
               Osaka Ugo Pharmaceuticals delivers quality products<br>
-              and services to your doorstep
+              and services to your doorstep.
             </p>
           <br>
             <button class="shop-now">Shop now</button>
@@ -28,8 +28,8 @@
             <h1 class="white-text">A new system for buying <br>medication online</h1>
             <!-- <br /> -->
             <p class="white-text">
-              Osaka Ugo Pharmaceuticals delivers quality products
-              <br />and services to your doorstep
+              We use the latest technological tools to make medication
+              easier and safer
             </p>
             <br />
             <button class="shop-now">Shop now</button>
@@ -46,8 +46,7 @@
             </h1>
             <!-- <br /> -->
             <p class="white-text">
-              Osaka Ugo Pharmaceuticals delivers quality products
-              <br />and services to your doorstep
+              Pay for your purchase securely online.
             </p>
             <br />
             <button class="shop-now">Shop now</button>
@@ -81,7 +80,9 @@ export default {};
 </script>
 
 <style scoped>
-
+#carousel{
+  z-index: 0 !important;
+}
 
 /* .carousel-item {
   height: 36em;

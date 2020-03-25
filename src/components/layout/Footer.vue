@@ -27,22 +27,22 @@
                 <!-- Solved Fontawesome brand icon problem -->
                 <font-awesome-icon
                   :icon="['fab', 'facebook-f']"
-                  style="color: #fff; font-size: 18px"
+                  style="color: #fff; font-size: 20px"
                 />
               </div>
               <div class="col-2">
-                <font-awesome-icon :icon="['fab', 'twitter']" style="color: #fff; font-size: 18px" />
+                <font-awesome-icon :icon="['fab', 'twitter']" style="color: #fff; font-size: 20px" />
               </div>
               <div class="col-2">
                 <font-awesome-icon
                   :icon="['fab', 'instagram']"
-                  style="color: #fff; font-size: 18px"
+                  style="color: #fff; font-size: 20px"
                 />
               </div>
               <div class="col-2">
                 <font-awesome-icon
                   :icon="['fab', 'whatsapp']"
-                  style="color: #fff; font-size: 18px"
+                  style="color: #fff; font-size: 20px"
                 />
               </div>
             </div>
@@ -77,8 +77,9 @@ export default {
 
 .footer-note {
   padding-top: 1em;
-  padding-bottom: 2em;
-  font-size: 15px;
+  padding-bottom: 1em;
+  font-size: 16px;
+  line-height: 2em;
 }
 
 h5 {

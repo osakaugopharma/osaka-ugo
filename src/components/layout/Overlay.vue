@@ -86,7 +86,7 @@ import Header from "./Header";
 export default {
   name: "Overlay",
   components: {
-    Header
+    Header,
   },
 
   methods: {
@@ -121,7 +121,7 @@ export default {
   height: 0;
   width: 100%;
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 2; /* Sit on top */
   left: 0;
   top: 0;
   background-color: rgba(235, 235, 235); /* Black w/opacity */
