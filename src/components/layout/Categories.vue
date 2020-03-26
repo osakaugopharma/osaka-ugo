@@ -7,43 +7,43 @@
              <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
              <p class="category-paragraph">Anti-Malaria</p>
         </div>
-        <div class="col-sm-4 col-4">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
+        <div class="col-sm-4 col-4 ">
+             <font-awesome-icon icon="pills" style="color: #000000; font-size: 24px" />
+             <p class="category-paragraph">Multivitamins</p>
         </div>
         <div class="col-sm-4 col-4">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
-        </div>
-      </div>
-
-       <div class="row row-gap">
-        <div class="col-sm-4 col-4">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
-        </div>
-        <div class="col-sm-4 col-4">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
-        </div>
-        <div class="col-sm-4 col-4">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
+             <font-awesome-icon icon="stethoscope" style="color: #000000; font-size: 24px" />
+             <p class="category-paragraph">Equipments</p>
         </div>
       </div>
 
        <div class="row row-gap">
         <div class="col-sm-4 col-4">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
+             <font-awesome-icon icon="venus-mars" style="color: #000000; font-size: 24px" />
+             <p class="category-paragraph">Contraceptives</p>
         </div>
         <div class="col-sm-4 col-4">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
+             <font-awesome-icon icon="diagnoses" style="color: #000000; font-size: 24px" />
+             <p class="category-paragraph">Antibiotics</p>
         </div>
         <div class="col-sm-4 col-4">
-             <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
+             <font-awesome-icon icon="eye" style="color: #000000; font-size: 24px" />
+             <p class="category-paragraph">Vision Drugs</p>
+        </div>
+      </div>
+
+       <div class="row row-gap">
+        <div class="col-sm-4 col-4">
+             <font-awesome-icon icon="tablets" style="color: #000000; font-size: 24px" />
+             <p class="category-paragraph">Ulcers and Gastro Drugs</p>
+        </div>
+        <div class="col-sm-4 col-4">
+             <font-awesome-icon icon="bolt" style="color: #000000; font-size: 24px" />
+             <p class="category-paragraph">Analgesics</p>
+        </div>
+        <div class="col-sm-4 col-4">
+             <font-awesome-icon icon="heartbeat" style="color: #000000; font-size: 24px" />
+             <p class="category-paragraph">Anti-Hypertensives</p>
         </div>
       </div>
     </div>
@@ -65,10 +65,16 @@ export default {
 
 .category-paragraph{
     margin-top: 3.5em;
+    font-size: 14px;
+    /* line-height: 1.em; */
 }
 
 .row-gap{
-    margin-top: 8em;
+    margin-top: 6em;
+}
+
+div.row div{
+     text-align: center;
 }
 
 /* @media (max-width: 575.98px) {

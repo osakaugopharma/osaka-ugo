@@ -8,7 +8,7 @@
 
     <div class="row row-gap">
       <div class="col-6 col-sm-6 col-lg-4">
-        <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
+        
         <p class="category-paragraph">Anti-Malaria</p>
       </div>
       <div class="col-6 col-sm-6 col-lg-4">

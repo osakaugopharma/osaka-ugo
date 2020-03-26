@@ -4,6 +4,15 @@ import { faFacebookF, faTwitter, faWhatsapp, faInstagram } from '@fortawesome/fr
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import { faSyringe } from '@fortawesome/free-solid-svg-icons'
+import { faPills } from '@fortawesome/free-solid-svg-icons'
+import { faTeeth } from '@fortawesome/free-solid-svg-icons'
+import { faVenusMars } from '@fortawesome/free-solid-svg-icons'
+import { faDiagnoses } from '@fortawesome/free-solid-svg-icons'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
+import { faTablets } from '@fortawesome/free-solid-svg-icons'
+import { faBolt } from '@fortawesome/free-solid-svg-icons'
+import { faHeartbeat } from '@fortawesome/free-solid-svg-icons'
+import { faStethoscope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import 'bootstrap/dist/js/bootstrap.bundle'
@@ -12,11 +21,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
-library.add(faSearch)
-library.add(faCaretDown)
-library.add(faShoppingCart)
-library.add(faSyringe)
-library.add(faFacebookF, faInstagram, faTwitter, faWhatsapp)
+library.add(faSearch, faCaretDown, faShoppingCart, faSyringe, faFacebookF, faInstagram, faTwitter, faWhatsapp, faPills, faTeeth, faVenusMars, faDiagnoses, faEye, faTablets, faBolt, faHeartbeat, faStethoscope)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false

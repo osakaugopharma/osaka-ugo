@@ -52,7 +52,7 @@
         </ul>-->
 
         <a href="#" @click.prevent="openDropdown($event)" id="products-link" class="dropbtn">
-          PRODUCTS
+          Products
           <font-awesome-icon icon="caret-down" style="color: #666" />
         </a>
         <div class="dropdown-content" id="products">
@@ -60,10 +60,10 @@
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
-        <a href="#">CONTACT</a>
-        <a href="#">ABOUT</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
         <a href="#" @click.prevent="openDropdown($event)" id="login-link">
-          LOGIN
+          Login
           <font-awesome-icon icon="caret-down" style="color: #666" />
         </a>
         <div class="dropdown-content" id="login">
