@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid background">
         <h2>
-           <b>A little bit about us</b>
+           A little bit about us
         </h2>
         <br>
         <p>

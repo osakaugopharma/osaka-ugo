@@ -24,10 +24,15 @@
               aria-expanded="false"
             >Products</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item"><router-link to="/products/AntiMalaria">Anti-Malaria</router-link></a>
+              <a class="dropdown-item"><router-link to="/products/Multivitamins">Multivitamins</router-link></a>
+              <a class="dropdown-item">Equipments</a>
+              <a class="dropdown-item">Contraceptives</a>
+              <a class="dropdown-item">Antibiotics</a>
+              <a class="dropdown-item">Eye Drugs</a>
+              <a class="dropdown-item">Ulcer and Gastro Drugs</a>
+              <a class="dropdown-item">Analgesics</a>
+              <a class="dropdown-item">Anti-Hypertensives</a>
             </div>
           </li>
           <li class="nav-item mr-2">
@@ -109,7 +114,7 @@ button.navbar-toggler {
   outline: none;
 }
 
-li a{
+li a {
   letter-spacing: -0.05em;
   font-size: 1.2rem;
   font-weight: 400;

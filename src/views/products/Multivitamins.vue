@@ -1,10 +1,14 @@
 <template>
-  <div class="container">
-    <nav aria-label="breadcrumb" class="margin">
-      <ol class="breadcrumb" style="background-color: #5cdb95; color: #ffffff">
-        <li class="breadcrumb-item active" aria-current="page" style="color: #ffffff">Multivitamins</li>
-      </ol>
-    </nav>
+  <div class="container-fluid">
+    <Header />
+
+    <div class="custom-container">
+      <nav aria-label="breadcrumb" class="margin">
+        <ol class="breadcrumb" style="background-color: #5cdb95; color: #ffffff">
+          <li class="breadcrumb-item active" aria-current="page" style="color: #ffffff">Multivitamins</li>
+        </ol>
+      </nav>
+    </div>
 
     <div class="row row-gap">
       <div class="col-6 col-sm-6 col-lg-4">
@@ -38,24 +42,59 @@
       </div>
     </div>
     <button class="shop-now">View more</button>
+    <Footer />
   </div>
+   
 </template>
 
-
 <script>
+import Header from "../../components/layout/Header";
+import Footer from "../../components/layout/Footer";
 export default {
-  name: "FeaturedProductContentOne"
+  name: "AntiMalaria",
+  components: {
+    Header,
+    Footer
+  }
+  //  methods:{
+  //     showPlusIcon(){
+  //       document.getElementsByClassName("add-to-cart-plus").style.transition = "display 0.2s";
+  //     }
+  //   }
 };
 </script>
 
 <style scoped>
-.container {
-  padding-top: 7em;
-  margin-bottom: 6em;
+
+nav {
+  margin-top: 3em;
+}
+
+.custom-container {
+  width: 95%;
+  margin: 0 auto;
 }
 
 h2 {
   margin-bottom: 2em;
+}
+
+.category-paragraph {
+  margin-top: 1.5em;
+  font-size: 14px;
+  /* font-weight: 500; */
+}
+
+.add-to-cart-plus {
+  color: #777373;
+  font-size: 24px;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+.price {
+  font-size: 14px;
 }
 
 .margin {
@@ -64,7 +103,20 @@ h2 {
 
 div.row div {
   margin-bottom: 5em;
+  transition: opacity 0.2s ease-in;
 }
+
+div.row div:hover {
+  opacity: 0.5;
+}
+
+/* div.row div p:hover{
+  opacity: 1;
+} */
+
+/* div.row div:hover {
+  
+} */
 
 .shop-now {
   border: none;
@@ -73,10 +125,14 @@ div.row div {
   padding: 0.5rem 2rem;
   color: #fff;
   outline: none;
-  /* margin-top: 5em; */
+  margin-bottom: 5em;
 }
-.category-paragraph {
-  margin-top: 3.5em;
+
+.drug-backdrop {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 0 !important;
 }
 
 .img-one{
@@ -100,17 +156,4 @@ div.row div {
 .img-five{
    background: url("../../assets/alphabetic.jpg")
 }
-
-.drug-backdrop{
-  height: 150px;
-  width: 150px;
-  margin: 0 auto;
-  margin-bottom: 0 !important;
-}
-
-/* @media (min-width: 768px) {
-  div.row div{
-    width: 250px !important;
-  }
-} */
 </style>

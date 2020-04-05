@@ -1,40 +1,20 @@
 <template>
   <div id="app">
-    <Overlay />
-  
-    <Carousel />
-    <About />
-    <Categories />
-    <FeaturedProducts />
-    <FeaturedProductContentOne />
-    <Footer />
+    <!-- <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div> -->
+    <router-view />
   </div>
 </template>
 
 
 <script>
-// import Header from './components/layout/Header';
-import Carousel from './components/layout/Carousel';
-
-import Overlay from './components/layout/Overlay';
-import About from './components/layout/About';
-import Categories from './components/layout/Categories';
-import FeaturedProducts from './components/layout/FeaturedProducts';
-import FeaturedProductContentOne from './components/layout/FeaturedProductContentOne';
-import Footer from './components/layout/Footer';
 
 export default {
   name: "app",
   components: {
-    // Header,
-    Carousel,
-    Overlay,
-  
-    About,
-    Categories,
-    FeaturedProducts,
-    FeaturedProductContentOne,
-    Footer,
+
   }
 }
 </script>
