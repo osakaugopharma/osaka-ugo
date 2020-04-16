@@ -1,8 +1,8 @@
 <template>
   <div id="carousel" class="mt-2 p-0 container-fluid">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active container-fluid p-0 one">
+        <div class="carousel-item active container-fluid p-0 one" data-interval="10000">
           <!-- <img src="../../assets/carousel.jpg" class="d-block w-100 img-fluid" alt /> -->
 
           <div class="carousel-caption text-left mb-xs-3 mb-sm-3 mb-md-5 mb-lg-5 pb-5">
@@ -21,7 +21,7 @@
             <button class="shop-now">Shop now</button>
           </div>
         </div>
-        <div class="carousel-item two">
+        <div class="carousel-item two" data-interval="10000">
           <!-- Added "img-fluid class to make images responsive" -->
           <!-- <img src="../../assets/pills.jpg" class="d-block w-100 img-fluid" alt /> -->
 
@@ -40,7 +40,7 @@
           </div>
         </div>
 
-        <div class="carousel-item three">
+        <div class="carousel-item three" data-interval="10000">
           <!-- <img src="../../assets/payment.jpg" class="d-block w-100 img-fluid" alt /> -->
 
           <div class="carousel-caption text-left mb-xs-3 mb-sm-3 mb-md-5 mb-lg-5 mb-xs-5 pb-5">
