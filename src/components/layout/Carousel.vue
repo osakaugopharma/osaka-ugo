@@ -5,18 +5,19 @@
         <div class="carousel-item active container-fluid p-0 one">
           <!-- <img src="../../assets/carousel.jpg" class="d-block w-100 img-fluid" alt /> -->
 
-          <div class="carousel-caption text-left mb-xs-3 mb-sm-1 mb-md-5 mb-lg-5 pb-5">
+          <div class="carousel-caption text-left mb-xs-3 mb-sm-3 mb-md-5 mb-lg-5 pb-5">
             <h1>
-              Pharmaceuticals<br>made
+              Pharmaceuticals
+              <br />made
               easy
             </h1>
             <!-- <br /> -->
 
             <p>
-              Osaka Ugo Pharmaceuticals delivers quality products<br>
-              and services to your doorstep.
+              Osaka Ugo Pharmaceuticals delivers quality products
+              <br />and services to your doorstep.
             </p>
-          <br>
+            <!-- <br> -->
             <button class="shop-now">Shop now</button>
           </div>
         </div>
@@ -25,13 +26,16 @@
           <!-- <img src="../../assets/pills.jpg" class="d-block w-100 img-fluid" alt /> -->
 
           <div class="carousel-caption text-left mb-xs-3 mb-sm-3 mb-md-5 mb-lg-5 mb-xs-5 pb-5">
-            <h1 class="white-text">A new system for buying <br>medication online</h1>
+            <h1 class="white-text">
+              A new system for buying
+              <br />medication online
+            </h1>
             <!-- <br /> -->
             <p class="white-text">
               We use the latest technological tools to make medication
               easier and safer
             </p>
-            <br />
+            <!-- <br /> -->
             <button class="shop-now">Shop now</button>
           </div>
         </div>
@@ -41,14 +45,12 @@
 
           <div class="carousel-caption text-left mb-xs-3 mb-sm-3 mb-md-5 mb-lg-5 mb-xs-5 pb-5">
             <h1 class="white-text">
-              Pay online easily and <br>
-              efficiently
+              Pay online easily and
+              <br />efficiently
             </h1>
             <!-- <br /> -->
-            <p class="white-text">
-              Pay for your purchase securely online.
-            </p>
-            <br />
+            <p class="white-text">Pay for your purchase securely online.</p>
+            <!-- <br /> -->
             <button class="shop-now">Shop now</button>
           </div>
         </div>
@@ -70,7 +72,7 @@
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-      </a> -->
+      </a>-->
     </div>
   </div>
 </template>
@@ -80,7 +82,10 @@ export default {};
 </script>
 
 <style scoped>
-#carousel{
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+
+#carousel {
   /* Fix overlay and carousel problem */
   z-index: -1;
   position: relative;
@@ -91,9 +96,20 @@ export default {};
 }
 
  */
- .carousel-caption{
-  /* padding-bottom: 30em; */
+.carousel-caption {
   margin-left: -2em;
+}
+
+.carousel-caption h1 {
+  font-weight: bold;
+  font-size: 2em;
+  font-family: Roboto;
+  font-stretch: 125%;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+  /* font-family: Roboto Medium; */
 }
 
 .carousel-item.one {
@@ -111,14 +127,15 @@ export default {};
   background-size: cover;
 }
 
-
-
 .shop-now {
   border: none;
   background-color: #5cdb95;
   border-radius: 3px;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1.5rem;
   color: rgb(255, 255, 255);
+  margin-top: 1rem;
+  font-size: 18px;
+  /* font-family: Karla; */
   /* text-shadow: 0px 0px 1px #000000; */
 }
 
@@ -126,72 +143,71 @@ export default {};
   color: #fff;
 }
 
-@media (max-width:575.98px) {
-  .carousel-caption h1{
- 
-  letter-spacing: 0.02rem;
-  font-size: 1.5em;
-}
+@media (max-width: 575.98px) {
+  .carousel-caption h1 {
+    letter-spacing: 0.02rem;
+  }
 
-.carousel-item {
-  height: 24em;
-}
-.carousel-caption{
-  width: 28em;
-}
+  .carousel-caption p {
+    font-size: 13px;
+  }
 
-.carousel-caption p{
-  width: 24em;
-  
-}
-}
+  .carousel-item {
+    height: 24em;
+  }
+  .carousel-caption {
+    width: 28em;
+  }
 
-@media (min-width: 576px) {
-  .carousel-caption h1{
-
-  letter-spacing: 0.02rem;
-  font-size: 1.96em;
-}
-
-.carousel-item {
-  height: 24em;
-}
+  .carousel-caption p {
+    width: 20em;
+  }
 }
 
 @media (min-width: 576px) {
-  .carousel-caption h1{
-  
-  letter-spacing: 0.02rem;
-  font-size: 1.96em;
+  .carousel-caption h1 {
+    letter-spacing: 0.02rem;
+    font-size: 1.96em;
+  }
+
+  .carousel-item {
+    height: 24em;
+  }
 }
 
-.carousel-item {
-  height: 24em;
-}
+@media (min-width: 576px) {
+  .carousel-caption h1 {
+    letter-spacing: 0.02rem;
+    font-size: 1.96em;
+  }
+
+  .carousel-item {
+    height: 24em;
+  }
 }
 
 @media (min-width: 768px) {
-    .carousel-caption h1{
-  /* font-weight: bold; */
-  letter-spacing: 0.02rem;
-  font-size: 2em;
-}
+  .carousel-caption h1 {
+    /* font-weight: bold; */
+    letter-spacing: 0.02rem;
+    font-size: 2em;
+  }
 
-.carousel-item {
-  height: 30em;
-}
+  .carousel-item {
+    height: 30em;
+  }
 }
 
 @media (min-width: 992px) {
-    .carousel-caption h1{
-  /* font-weight: bold; */
-  letter-spacing: 0.02rem;
-  font-size: 3em;
-}
+  .carousel-caption h1 {
+    /* font-weight: bold; */
+    letter-spacing: 0.02rem;
+    font-size: 3em;
+  }
 
-.carousel-item {
-  height: 36em;
-}
+  .carousel-item {
+    height: 36em;
+  }
 }
 </style>
 

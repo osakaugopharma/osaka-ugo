@@ -5,7 +5,7 @@
     <div class="custom-container">
       <nav aria-label="breadcrumb" class="margin">
         <ol class="breadcrumb" style="background-color: #5cdb95; color: #ffffff">
-          <li class="breadcrumb-item active" aria-current="page" style="color: #ffffff">Anti-Malaria</li>
+          <li class="breadcrumb-item active" aria-current="page" style="color: #ffffff; font-size: 17px;">Anti-Malaria</li>
         </ol>
       </nav>
     </div>
@@ -79,7 +79,7 @@ export default {
 <style scoped>
 
 nav {
-  margin-top: 3em;
+  margin-top: 1.5em;
 }
 
 .custom-container {
@@ -92,7 +92,7 @@ h2 {
 }
 
 .category-paragraph {
-  margin-top: 1.5em;
+  margin-top: 0.5em;
   font-size: 14px;
   /* font-weight: 500; */
 }
@@ -110,11 +110,11 @@ h2 {
 }
 
 .margin {
-  margin-bottom: 7em;
+  margin-bottom: 3em;
 }
 
 div.row div {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
   transition: opacity 0.2s ease-in;
 }
 

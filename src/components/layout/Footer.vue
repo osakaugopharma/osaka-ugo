@@ -76,10 +76,11 @@ export default {
 } */
 
 .footer-note {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  font-size: 16px;
+  /* padding-top: 1em; */
+  padding-bottom: 3em;
+  font-size: 13px;
   line-height: 2em;
+  font-family: Roboto Light;
 }
 
 h5 {
@@ -87,12 +88,12 @@ h5 {
 }
 
 .social-media h5 {
-  padding-bottom: 1.5em;
+  padding-bottom: 1em;
 }
 
 .social-media {
   padding-bottom: 0;
-  height: 6em !important;
+  height: 5em !important;
 }
 
 /* .col-sm p{
@@ -105,6 +106,10 @@ h5 {
 
 div.row div {
   margin-bottom: 3.5em;
+}
+
+div.row div p{
+  font-family: Roboto Light;
 }
 
 /* div.row{

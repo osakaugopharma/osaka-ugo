@@ -2,8 +2,8 @@
 <div class="container-fluid">
     <Header />
      <header>
-        <h2 class="header">Contact Us</h2>
-        <p>Get in touch with us through the form <br> and we will get back to you as soon as we can</p>
+        <h2 class="header">Sign Up</h2>
+        <p>Sign up to be able to purchase from us</p>
     </header>
 
     <section>
@@ -17,28 +17,14 @@
             <input type="email">
 
  <br>
-            <label>Message</label><br>
-            <textarea></textarea>
+            <label>Password</label><br>
+            <input type="password">
         </form>
-        <button class="shop-now">Send</button>
+        <button class="shop-now">Sign Up</button>
     </section>
 
     <div class="container">
-        <div class="row">
-        <div class="col-sm-4 col-4">
-             <font-awesome-icon icon="map-marker-alt" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anambra, Ekwulobia</p>
-        </div>
-        <div class="col-sm-4 col-4">
-             <font-awesome-icon icon="envelope" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">example@gmail.com</p>
-        </div>
-        <div class="col-sm-4 col-4">
-             <font-awesome-icon icon="mobile-alt" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">0900-000-0000</p>
-        </div>
-      
-        </div>
+       <p>Already have an account? <router-link to="/SignIn">Sign in</router-link></p>
     </div>
     <Footer />
    
@@ -85,7 +71,7 @@ export default {
      margin-top: 2em;
  }
 
- form input, form textarea {
+ form input{
      width: 100%;
      border-width: 0 0 1px 0;
      border-color: rgb(116, 111, 111);

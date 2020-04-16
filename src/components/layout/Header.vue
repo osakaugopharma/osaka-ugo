@@ -36,11 +36,11 @@
             </div>
           </li>
           <li class="nav-item mr-2">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link"><router-link to="/ContactUs">Contact Us</router-link></a>
           </li>
 
           <li class="nav-item mr-2">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link"><router-link to="/AboutUs">About</router-link></a>
           </li>
 
           <li class="nav-item dropdown mr-4">
@@ -54,8 +54,8 @@
               aria-expanded="false"
             >Login</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Create Account</a>
-              <a class="dropdown-item" href="#">Sign In</a>
+              <a class="dropdown-item"><router-link to="/SignUp">Create account</router-link></a>
+              <a class="dropdown-item"><router-link to="/SignIn">Sign in</router-link></a>
               <!-- <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>-->
             </div>

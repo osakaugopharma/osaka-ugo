@@ -3,7 +3,7 @@
     <h2>Featured Products</h2>
     <nav aria-label="breadcrumb" class="margin">
       <ol class="breadcrumb" style="background-color: #5cdb95; color: #ffffff">
-        <li class="breadcrumb-item active" aria-current="page" style="color: #ffffff">Anti-Malaria</li>
+        <li class="breadcrumb-item active" aria-current="page" style="color: #ffffff; font-size: 17px;">Anti-Malaria</li>
       </ol>
     </nav>
 
@@ -122,16 +122,20 @@ export default {
 
 <style scoped>
 .container{
-  padding-top: 7em;
+  padding-top: 5em;
 }
 
 h2{
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
 }
 
 .category-paragraph{
-    margin-top: 1.5em;
-    font-size: 14px;
+    margin-top: 0.5em;
+    font-size: 15px;
+  
     /* font-weight: 500; */
 }
 
@@ -145,14 +149,15 @@ h2{
 
 .price{
   font-size: 14px;
+  
 }
 
 .margin{
-  margin-bottom: 7em;
+  margin-bottom: 3em;
 }
 
 div.row div {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
   transition: opacity 0.2s ease-in;
 }
 
@@ -171,12 +176,13 @@ div.row div:hover{
 
 
 .shop-now{
-  border: none;
-  background-color: #5cdb95;
+  border: 1px solid #5cdb95;
+  background-color: #fff;
   border-radius: 3px;
-  padding: 0.5rem 2rem;
-  color: #fff;
+  padding: 0.5rem 1.5rem;
+  color: #000;
   outline: none;
+  font-size: 18px;
   /* margin-top: 5em; */
 }
 

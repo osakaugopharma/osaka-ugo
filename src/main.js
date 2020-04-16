@@ -14,6 +14,10 @@ import { faBolt } from '@fortawesome/free-solid-svg-icons'
 import { faHeartbeat } from '@fortawesome/free-solid-svg-icons'
 import { faStethoscope } from '@fortawesome/free-solid-svg-icons'
 import { faPlusCircle } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import 'bootstrap/dist/js/bootstrap.bundle'
@@ -23,7 +27,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
-library.add(faSearch, faCaretDown, faShoppingCart, faSyringe, faFacebookF, faInstagram, faTwitter, faWhatsapp, faPills, faTeeth, faVenusMars, faDiagnoses, faEye, faTablets, faBolt, faHeartbeat, faStethoscope, faPlusCircle)
+library.add(faSearch, faCaretDown, faShoppingCart, faSyringe, faFacebookF, faInstagram, faTwitter, faWhatsapp, faPills, faTeeth, faVenusMars, faDiagnoses, faEye, faTablets, faBolt, faHeartbeat, faStethoscope, faPlusCircle, faMapMarkerAlt, faEnvelope, faMobileAlt, faCheck)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false

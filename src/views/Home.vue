@@ -37,6 +37,7 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
 #app {
   font-family: Roboto-Regular;
   -webkit-font-smoothing: antialiased;
@@ -45,7 +46,7 @@ export default {
   color: #2c3e50;
   overflow: hidden;
   letter-spacing: 0.01rem;
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 </style>

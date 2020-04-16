@@ -2,7 +2,7 @@
   <div class="container">
     <nav aria-label="breadcrumb" class="margin">
       <ol class="breadcrumb" style="background-color: #5cdb95; color: #ffffff">
-        <li class="breadcrumb-item active" aria-current="page" style="color: #ffffff">Multivitamins</li>
+        <li class="breadcrumb-item active" aria-current="page" style="color: #ffffff;font-size: 17px;">Multivitamins</li>
       </ol>
     </nav>
 
@@ -63,20 +63,29 @@ h2 {
 }
 
 div.row div {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 
-.shop-now {
-  border: none;
-  background-color: #5cdb95;
+.shop-now{
+  border: 1px solid #5cdb95;
+  background-color: #fff;
   border-radius: 3px;
-  padding: 0.5rem 2rem;
-  color: #fff;
+  padding: 0.5rem 1.5rem;
+  color: #000;
   outline: none;
+  font-size: 18px;
   /* margin-top: 5em; */
 }
-.category-paragraph {
-  margin-top: 3.5em;
+
+.category-paragraph{
+    margin-top: 0.5em;
+    font-size: 15px;
+    /* font-family: Roboto Light; */
+}
+
+.price{
+  font-size: 14px;
+  /* font-family: Roboto Thin; */
 }
 
 .img-one{

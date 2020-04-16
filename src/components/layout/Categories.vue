@@ -1,6 +1,6 @@
 <template>
-  <div class="container background">
-    <div class="container">
+  <div class="container-fluid background">
+    <div class="container-fluid">
         <h2>Product categories</h2>
       <div class="row row-gap text-center">
         <div class="col-sm-4 col-4">
@@ -60,17 +60,26 @@ export default {
 
 <style scoped>
 .background {
-  padding-top: 5.5em;
+  padding-top: 2em;
+  
+}
+
+.background h2{
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #000;
 }
 
 .category-paragraph{
     margin-top: 3.5em;
-    font-size: 14px;
+    font-size: 15px;
+    color: #000;
+    font-family: Roboto;
     /* line-height: 1.em; */
 }
 
 .row-gap{
-    margin-top: 6em;
+    margin-top: 4em;
 }
 
 div.row div{
