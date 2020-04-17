@@ -47,8 +47,8 @@ p{
 }
 
 .background{
-    /* background-color: #e5faf1; */
-    padding-top: 6em;
+    background-color: #e5faf1;
+    padding-top: 5em;
     text-align: center;
     /* font-family: Karla; */
 }

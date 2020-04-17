@@ -60,7 +60,7 @@ export default {
 
 <style scoped>
 .background {
-  padding-top: 2em;
+  padding-top: 5em;
   
 }
 
@@ -72,7 +72,7 @@ export default {
 
 .category-paragraph{
     margin-top: 3.5em;
-    font-size: 15px;
+    font-size: 13px;
     color: #000;
     font-family: Roboto;
     /* line-height: 1.em; */
