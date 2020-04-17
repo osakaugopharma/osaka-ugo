@@ -63,29 +63,58 @@
           </li>
         </ul>-->
 
-        <a href="#" @click.prevent="openDropdown($event)" id="products-link" class="dropbtn text-left">
+        <a href="#" @click.prevent="openProductMenu()" id="products-link" class="dropbtn text-left">
           Products
-          <font-awesome-icon icon="caret-down" style="color: #666" />
+          <font-awesome-icon icon="caret-down" style="color: #000" />
         </a>
-        <div class="dropdown-content" id="products">
+        <!-- <div class="dropdown-content text-left" id="products">
           <a href="#">Link 1</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
-        </div>
+        </div> -->
         <a href="#" class="text-left">Contact</a>
         <a href="#" class="text-left">About</a>
         <a href="#" @click.prevent="openDropdown($event)" id="login-link" class="text-left">
           Login
-          <font-awesome-icon icon="caret-down" style="color: #666" />
+          <font-awesome-icon icon="caret-down" style="color: #000" />
         </a>
-        <div class="dropdown-content" id="login">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+        <div class="dropdown-content text-left" id="login">
+          <a href="#" class="ml-2">Create account</a>
+          <a href="#" class="ml-2">Sign in</a>
         </div>
         <div class="dropdown"></div>
         <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
       </div>
+    </div>
+     <div id="productNav" class="overlay">
+      <div class="row">
+        <div class="col-2">
+           <a href="javascript:void(0)" class="closebtn" @click="closeProductMenu">&times;</a>
+         </div>
+        <div class="col-8">
+          <img src="../../assets/OU6.png" alt="logo" width="120" height="40" class="mt-4 mr-2" />
+        </div>
+         
+         
+          
+      </div>
+      <hr>
+
+      <div class="overlay-content">
+        <a href="#" class="text-left">Anti-malaria</a>
+        <a href="#" class="text-left">Multivitamins</a>
+         <a href="#" class="text-left">Equipments</a>
+        <a href="#" class="text-left">Contraceptives</a>
+         <a href="#" class="text-left">Antibiotics</a>
+        <a href="#" class="text-left">Vision drugs</a>
+         <a href="#" class="text-left">Ulcer and Gastro drugs</a>
+        <a href="#" class="text-left">Analgesics</a>
+        <a href="#" class="text-left">Anti-hypertensives</a>
+      </div>
+      
+     
+
+    
     </div>
 
     <!-- Use any element to open/show the overlay navigation menu -->
@@ -120,7 +149,15 @@ export default {
       }
 
       // document.getElementById("login").classList.toggle("show");
-    }
+    },
+
+    openProductMenu(){
+      document.getElementById("productNav").style.height = "100%";
+    },
+
+    closeProductMenu() {
+      document.getElementById("productNav").style.height = "0%";
+    },
   }
 };
 </script>
@@ -156,6 +193,10 @@ export default {
   color: #000;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.dropdown-content a{
+  font-size: 14px;
 }
 
 /* When you mouse over the navigation links, change their color */

@@ -5,7 +5,7 @@
       <div class="row row-gap text-center">
         <div class="col-sm-4 col-4">
              <font-awesome-icon icon="syringe" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Malaria</p>
+             <p class="category-paragraph">Anti-malaria</p>
         </div>
         <div class="col-sm-4 col-4 ">
              <font-awesome-icon icon="pills" style="color: #000000; font-size: 24px" />
@@ -28,14 +28,14 @@
         </div>
         <div class="col-sm-4 col-4">
              <font-awesome-icon icon="eye" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Vision Drugs</p>
+             <p class="category-paragraph">Vision drugs</p>
         </div>
       </div>
 
        <div class="row row-gap">
         <div class="col-sm-4 col-4">
              <font-awesome-icon icon="tablets" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Ulcers and Gastro Drugs</p>
+             <p class="category-paragraph">Ulcers and Gastro drugs</p>
         </div>
         <div class="col-sm-4 col-4">
              <font-awesome-icon icon="bolt" style="color: #000000; font-size: 24px" />
@@ -43,7 +43,7 @@
         </div>
         <div class="col-sm-4 col-4">
              <font-awesome-icon icon="heartbeat" style="color: #000000; font-size: 24px" />
-             <p class="category-paragraph">Anti-Hypertensives</p>
+             <p class="category-paragraph">Anti-hypertensives</p>
         </div>
       </div>
     </div>
