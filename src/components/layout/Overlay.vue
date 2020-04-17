@@ -2,8 +2,20 @@
   <div>
     <Header v-on:show-overlay-navigation="openNav" />
     <div id="myNav" class="overlay">
+      <div class="row">
+        <div class="col-2">
+           <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
+         </div>
+        <div class="col-8">
+          <img src="../../assets/OU6.png" alt="logo" width="120" height="40" class="mt-4 mr-2" />
+        </div>
+         
+         
+          
+      </div>
+      <hr>
       <!-- Button to close the overlay navigation -->
-      <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
+     
 
       <!-- Overlay content -->
       <div class="overlay-content">
@@ -51,7 +63,7 @@
           </li>
         </ul>-->
 
-        <a href="#" @click.prevent="openDropdown($event)" id="products-link" class="dropbtn">
+        <a href="#" @click.prevent="openDropdown($event)" id="products-link" class="dropbtn text-left">
           Products
           <font-awesome-icon icon="caret-down" style="color: #666" />
         </a>
@@ -60,9 +72,9 @@
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
-        <a href="#" @click.prevent="openDropdown($event)" id="login-link">
+        <a href="#" class="text-left">Contact</a>
+        <a href="#" class="text-left">About</a>
+        <a href="#" @click.prevent="openDropdown($event)" id="login-link" class="text-left">
           Login
           <font-awesome-icon icon="caret-down" style="color: #666" />
         </a>
@@ -124,7 +136,7 @@ export default {
   z-index: 2; /* Sit on top */
   left: 0;
   top: 0;
-  background-color: rgba(235, 235, 235); /* Black w/opacity */
+  background-color: rgb(255, 255, 255); /* Black w/opacity */
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -132,18 +144,16 @@ export default {
 /* Position the content inside the overlay */
 .overlay-content {
   position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
+  width: 70%; /* 100% width */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
-  padding: 8px;
+  padding: 1rem 2rem;
   text-decoration: none;
-  font-size: 20px;
-  color: #818181;
+  font-size: 18px;
+  color: #000;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
 }
@@ -156,10 +166,13 @@ export default {
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
-  position: absolute;
+  /* position: absolute;
   top: 20px;
-  right: 45px;
-  font-size: 60px;
+  right: 45px; */
+  font-size: 36px;
+color: #000;
+  /* width: 100px;
+  margin: 0; */
 }
 
 .overlay li {
