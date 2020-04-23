@@ -82,8 +82,7 @@ export default {};
 </script>
 
 <style scoped>
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap");
 
 #carousel {
   /* Fix overlay and carousel problem */
@@ -161,17 +160,6 @@ export default {};
 
   .carousel-caption p {
     width: 20em;
-  }
-}
-
-@media (min-width: 576px) {
-  .carousel-caption h1 {
-    letter-spacing: 0.02rem;
-    font-size: 1.96em;
-  }
-
-  .carousel-item {
-    height: 24em;
   }
 }
 

@@ -1,6 +1,6 @@
 <template>
-<div class="container-fluid">
-    <Header />
+<div class="container-fluid p-0">
+    <Overlay />
      <header>
         <h2 class="header">Sign Up</h2>
         <p>Sign up to be able to purchase from us</p>
@@ -34,13 +34,13 @@
 </template>
     
 <script>
-import Header from "../components/layout/Header";
+import Overlay from '../components/layout/Overlay';
 import Footer from "../components/layout/Footer";
 
 export default {
  name: "ContactUs",
  components:{
-     Header,
+     Overlay,
      Footer,
  }    
 }
@@ -59,7 +59,15 @@ export default {
      text-align: center;
      margin-top: 1.5em;
      line-height: 1.5em;
+     font-size: 15px;
  }
+
+ h2 {
+  margin-bottom: 1.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
+}
 
  form{
      width: 40%;
@@ -78,22 +86,36 @@ export default {
      outline: none;
  }
  
- .shop-now{
+.shop-now {
   border: none;
   background-color: #5cdb95;
   border-radius: 3px;
-  padding: 0.5rem 2rem;
-  color: #fff;
-  outline: none;
-  margin-top: 3em;
+  padding: 0.5rem 1.5rem;
+  color: rgb(255, 255, 255);
+  margin-top: 3rem;
+  font-size: 18px;
 }
 
 section{
-    margin-bottom: 8em;
+    margin-bottom: 4em;
 }
 
 .container{
     margin-bottom: 4em;
+    font-size: 13px;
+}
+
+@media (max-width: 575.98px) {
+  form {
+    width: 70%;
+    text-align: left;
+    margin: 1.5em auto 0 auto;
+  }
+
+  .category-paragraph {
+    font-size: 13px;
+    margin-top: 2em;
+  }
 }
 
 

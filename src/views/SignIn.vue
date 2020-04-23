@@ -1,82 +1,90 @@
 <template>
-<div class="container-fluid">
-    <Header />
-     <header>
-        <h2 class="header">Sign In</h2>
-        <p>Welcome back!</p>
+  <div class="container-fluid p-0">
+    <Overlay />
+    <header>
+      <h2 class="header">Sign In</h2>
+      <p>Welcome back!</p>
     </header>
 
     <section>
-        <form>
+      <form>
+        <label>Email</label>
+        <br />
+        <input type="email" />
 
-            <label>Email</label><br>
-            <input type="email">
-
- <br>
-            <label>Password</label><br>
-            <input type="password">
-        </form>
-        <button class="shop-now">Sign In</button>
+        <br />
+        <label>Password</label>
+        <br />
+        <input type="password" />
+      </form>
+      <button class="shop-now">Sign In</button>
     </section>
 
     <div class="container">
-       <p><router-link to="#">Forgot your password?</router-link></p>
-       
+      <p>
+        <router-link to="#">Forgot your password?</router-link>
+      </p>
     </div>
     <Footer />
-     <p><router-link to="/PaymentSuccess">Payment Successful</router-link></p>
-   
-    
-</div>
-
+    <p>
+      <router-link to="/PaymentSuccess">Payment Successful</router-link>
+    </p>
+  </div>
 </template>
     
 <script>
-import Header from "../components/layout/Header";
+import Overlay from "../components/layout/Overlay";
 import Footer from "../components/layout/Footer";
 
 export default {
- name: "ContactUs",
- components:{
-     Header,
-     Footer,
- }    
-}
+  name: "ContactUs",
+  components: {
+    Overlay,
+    Footer
+  }
+};
 </script>
 
 <style scoped>
- .header{
-     margin-top: 1em;
- }
+.header {
+  margin-top: 1em;
+}
 
- .category-paragraph{
-     margin-top: 3.5em;
- }
+.category-paragraph {
+  margin-top: 3.5em;
+}
 
-  header p{
-     text-align: center;
-     margin-top: 1.5em;
-     line-height: 1.5em;
- }
+h2 {
+  margin-bottom: 1.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
+}
 
- form{
-     width: 40%;
-     text-align: left;
-     margin: 1.5em auto 0 auto;
- }
+header p {
+  text-align: center;
+  margin-top: 1.5em;
+  line-height: 1.5em;
+}
 
- label{
-     margin-top: 2em;
- }
+form {
+  width: 40%;
+  text-align: left;
+  margin: 1.5em auto 0 auto;
+}
 
- form input{
-     width: 100%;
-     border-width: 0 0 1px 0;
-     border-color: rgb(116, 111, 111);
-     outline: none;
- }
- 
- .shop-now{
+label {
+  margin-top: 2em;
+}
+
+form input {
+  width: 100%;
+  border-width: 0 0 1px 0;
+  border-color: rgb(116, 111, 111);
+  outline: none;
+}
+
+.shop-now {
   border: none;
   background-color: #5cdb95;
   border-radius: 3px;
@@ -86,13 +94,26 @@ export default {
   margin-top: 3em;
 }
 
-section{
-    margin-bottom: 8em;
+section {
+  margin-bottom: 5em;
 }
 
-.container{
-    margin-bottom: 4em;
+.container {
+  margin-bottom: 5em;
+  font-size: 13px;
 }
 
+@media (max-width: 575.98px) {
+  form {
+    width: 70%;
+    text-align: left;
+    margin: 1.5em auto 0 auto;
+  }
+
+  .category-paragraph {
+    font-size: 13px;
+    margin-top: 2em;
+  }
+}
 
 </style>

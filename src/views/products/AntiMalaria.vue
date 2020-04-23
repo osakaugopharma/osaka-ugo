@@ -1,16 +1,16 @@
 <template>
-  <div class="container-fluid">
-    <Header />
+  <div class="container-fluid p-0">
+    <Overlay />
 
-    <div class="custom-container">
+    <!-- <div class="custom-container">
       <nav aria-label="breadcrumb" class="margin">
         <ol class="breadcrumb" style="background-color: #5cdb95; color: #ffffff">
           <li class="breadcrumb-item active" aria-current="page" style="color: #ffffff; font-size: 17px;">Anti-Malaria</li>
         </ol>
       </nav>
-    </div>
+    </div> -->
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mt-5">
       <!-- <div class="add-to-cart-overlay">
         <button class="add-to-cart">
           +
@@ -54,18 +54,18 @@
         <p class="price">₦0.00</p>
       </div>
     </div>
-    <button class="shop-now">View more</button>
+    <!-- <button class="shop-now">View more</button> -->
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from "../../components/layout/Header";
+import Overlay from "../../components/layout/Overlay";
 import Footer from "../../components/layout/Footer";
 export default {
   name: "AntiMalaria",
   components: {
-    Header,
+    Overlay,
     Footer
   }
   //  methods:{

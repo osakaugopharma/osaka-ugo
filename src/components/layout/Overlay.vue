@@ -4,18 +4,14 @@
     <div id="myNav" class="overlay">
       <div class="row">
         <div class="col-2">
-           <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
-         </div>
+          <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
+        </div>
         <div class="col-8">
           <img src="../../assets/OU6.png" alt="logo" width="120" height="40" class="mt-4 mr-2" />
         </div>
-         
-         
-          
       </div>
-      <hr>
+      <hr />
       <!-- Button to close the overlay navigation -->
-     
 
       <!-- Overlay content -->
       <div class="overlay-content">
@@ -71,50 +67,47 @@
           <a href="#">Link 1</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
-        </div> -->
-        <a href="#" class="text-left">Contact</a>
-        <a href="#" class="text-left">About</a>
+        </div>-->
+       <router-link class="text-left" to="/ContactUs">Contact us</router-link>
+
+       <router-link class="text-left" to="/AboutUs">About</router-link>
+
         <a href="#" @click.prevent="openDropdown($event)" id="login-link" class="text-left">
           Login
           <font-awesome-icon icon="caret-down" style="color: #000" />
         </a>
         <div class="dropdown-content text-left" id="login">
-          <a href="#" class="ml-2">Create account</a>
-          <a href="#" class="ml-2">Sign in</a>
+          <router-link to="/SignUp">Create account</router-link>
+          <router-link to="/SignIn">Sign in</router-link>
+          <!-- <a href="#" class="ml-2">Create account</a>
+          <a href="#" class="ml-2">Sign in</a> -->
         </div>
         <div class="dropdown"></div>
         <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
       </div>
     </div>
-     <div id="productNav" class="overlay">
+    <div id="productNav" class="overlay">
       <div class="row">
         <div class="col-2">
-           <a href="javascript:void(0)" class="closebtn" @click="closeProductMenu">&times;</a>
-         </div>
+          <a href="javascript:void(0)" class="closebtn" @click="closeProductMenu">&times;</a>
+        </div>
         <div class="col-8">
           <img src="../../assets/OU6.png" alt="logo" width="120" height="40" class="mt-4 mr-2" />
         </div>
-         
-         
-          
       </div>
-      <hr>
+      <hr />
 
       <div class="overlay-content">
-        <a href="#" class="text-left">Anti-malaria</a>
-        <a href="#" class="text-left">Multivitamins</a>
-         <a href="#" class="text-left">Equipments</a>
-        <a href="#" class="text-left">Contraceptives</a>
-         <a href="#" class="text-left">Antibiotics</a>
-        <a href="#" class="text-left">Vision drugs</a>
-         <a href="#" class="text-left">Ulcer and Gastro drugs</a>
-        <a href="#" class="text-left">Analgesics</a>
-        <a href="#" class="text-left">Anti-hypertensives</a>
+        <router-link class="text-left" to="/products/AntiMalaria">Anti-malaria</router-link>
+        <router-link class="text-left" to="/products/Multivitamins">Multivitamins</router-link>
+        <router-link class="text-left" to="/products/Equipments">Equipments</router-link>
+        <router-link class="text-left" to="/products/Contraceptives">Contraceptives</router-link>
+        <router-link class="text-left" to="/products/Antibiotics">Antibiotics</router-link>
+        <router-link class="text-left" to="/products/VisionDrugs">Vision drugs</router-link>
+        <router-link class="text-left" to="/products/UlcerAndGastro">Ulcer and Gastro drugs</router-link>
+        <router-link class="text-left" to="/products/Analgesics">Analgesics</router-link>
+        <router-link class="text-left" to="/products/Antihypertensives">Anti-hypertensives</router-link>
       </div>
-      
-     
-
-    
     </div>
 
     <!-- Use any element to open/show the overlay navigation menu -->
@@ -127,7 +120,7 @@ import Header from "./Header";
 export default {
   name: "Overlay",
   components: {
-    Header,
+    Header
   },
 
   methods: {
@@ -151,13 +144,13 @@ export default {
       // document.getElementById("login").classList.toggle("show");
     },
 
-    openProductMenu(){
+    openProductMenu() {
       document.getElementById("productNav").style.height = "100%";
     },
 
     closeProductMenu() {
       document.getElementById("productNav").style.height = "0%";
-    },
+    }
   }
 };
 </script>
@@ -195,7 +188,7 @@ export default {
   transition: 0.3s; /* Transition effects on hover (color) */
 }
 
-.dropdown-content a{
+.dropdown-content a {
   font-size: 14px;
 }
 
@@ -211,7 +204,7 @@ export default {
   top: 20px;
   right: 45px; */
   font-size: 36px;
-color: #000;
+  color: #000;
   /* width: 100px;
   margin: 0; */
 }
@@ -238,5 +231,9 @@ color: #000;
 
 .show {
   display: block;
+}
+
+.clearfix{
+
 }
 </style>
